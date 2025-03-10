@@ -1,0 +1,27 @@
+bookbase/                   # Корневая папка проекта
+│── bookbase/               # Конфигурация проекта
+│   ├── __init__.py
+│   ├── settings.py         # Настройки Django
+│   ├── urls.py             # Основные маршруты
+│   ├── wsgi.py             # Запуск через WSGI
+│   ├── asgi.py             # Запуск через ASGI
+│── library/                # Приложение "Библиотека"
+│   ├── migrations/         # Миграции базы данных
+│   ├── static/             # Статика (CSS, JS, изображения)
+│   ├── templates/          # HTML-шаблоны
+│   │   ├── library/
+│   │   │   ├── base.html   # Базовый шаблон
+│   │   │   ├── home.html   # Главная страница
+│   │   │   ├── book_detail.html  # Страница книги
+│   ├── __init__.py
+│   ├── admin.py            # Настройка панели администратора
+│   ├── apps.py
+│   ├── models.py           # Модели БД
+│   ├── views.py            # Контроллеры
+│   ├── urls.py             # Маршруты приложения
+│── media/                  # Папка для загруженных файлов (обложки, книги)
+│── manage.py               # Управление проектом Django
+│── db.sqlite3              # База данных SQLite
+│── requirements.txt        # Зависимости проекта
+│── Dockerfile              # Файл для Docker
+│── .gitignore              # Игнорируемые файлы Git
